@@ -2,24 +2,26 @@
 ## 資料表定義
 table name: volunteers.members
 <hr />
-```
-id            int(32) primary key auto_increment,      // 資料庫主索引
-member_id     varchar(11),                             // 志工證號
-name          varchar(14),                             // 姓名
-sex           varchar(4),                              // 性別
-birthday      date,                                    // 生日
-pid           char(10),                                // 身分證字號
-address       varchar(100),                            // 住址
-phone         varchar(11),                             // 家中電話
-mobile        varchar(11),                             // 行動電話
-join_date     date,                                    // 加入志願隊日期
-specialty     tinyint(2)                               // 專長代碼 (見專長代碼對照表)
-education     tinyint(2)                               // 學歷代碼 (朏學歷代碼對照表)
-occupation    tinyint(2)                               // 職業代碼 (見職業代碼對照表)
-activity      tinyint(9),                              // 活躍狀態
-qualification varchar(10),                             // 志工資格
-status_quo    varchar(12),                             // 目前狀態 (活躍、離隊、休眠)
-options       text());                                 // 各類額外訊息 (見 options data definition reference)
+
+Column Name   | Data Type                             | Comment
+--------------|---------------------------------------|-----------------
+id            | int(32) primary key auto_increment,   |  // 資料庫主索引
+member_id     | varchar(11),                          |  // 志工證號
+name          | varchar(14),                          |  // 姓名
+sex           | varchar(4),                           |  // 性別
+birthday      | date,                                 |  // 生日
+pid           | char(10),                             |  // 身分證字號
+address       | varchar(100),                         |  // 住址
+phone         | varchar(11),                          |  // 家中電話
+mobile        | varchar(11),                          |  // 行動電話
+join_date     | date,                                 |  // 加入志願隊日期
+specialty     | tinyint(2)                            |  // 專長代碼 (見專長代碼對照表)
+education     | tinyint(2)                            |  // 學歷代碼 (朏學歷代碼對照表)
+occupation    | tinyint(2)                            |  // 職業代碼 (見職業代碼對照表)
+activity      | tinyint(9),                           |  // 活躍狀態
+qualification | varchar(10),                          |  // 志工資格
+status_quo    | varchar(12),                          |  // 目前狀態 (活躍、離隊、休眠)
+options       | text());                              |  // 各類額外訊息 (見 options data definition reference)
 ```
 ### 專長代碼
 ```
